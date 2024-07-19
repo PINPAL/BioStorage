@@ -8,6 +8,7 @@
 - (Optional) JEI >= 11.5.2.1003 
 
 # Forge Information
+
 Source installation information for modders
 -------------------------------------------
 This code follows the Minecraft Forge installation methodology. It will apply
