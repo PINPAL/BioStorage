@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "refinedstorage:speed_upgrade"
+		},
+		{
+			"item": "refinedstorage:speed_upgrade"
+		},
+		{
+			"item": "refinedstorage:speed_upgrade"
+		},
+		{
+			"item": "refinedstorage:advanced_processor"
+		}
+	],
+	"result": {
+		"item": "refinedstorage:stack_upgrade"
+	}
+}

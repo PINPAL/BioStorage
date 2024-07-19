@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "refinedstorage:grid"
+		},
+		{
+			"item": "minecraft:bucket"
+		}
+	],
+	"result": {
+		"item": "refinedstorage:fluid_grid"
+	}
+}

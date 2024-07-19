@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "biomancy"
+		}
+	],
+	"type": "biomancy:bio_forging",
+	"bio_forge_tab": "biomancy:machines",
+	"ingredients": [
+		{
+			"item": "refinedstorage:improved_processor",
+			"count": 1
+		},
+		{
+			"item": "refinedstorage:cable",
+			"count": 1
+		},
+		{
+			"item": "biomancy:maw_hopper",
+			"count": 1
+		}
+	],
+	"nutrientsCost": 1,
+	"result": {
+		"item": "refinedstorage:importer",
+		"count": 1
+	}
+}

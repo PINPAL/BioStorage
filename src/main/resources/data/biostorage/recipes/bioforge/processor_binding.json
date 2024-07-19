@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "biomancy"
+		}
+	],
+	"type": "biomancy:bio_forging",
+	"bio_forge_tab": "biomancy:machines",
+	"ingredients": [
+		{
+			"tag": "forge:silicon",
+			"count": 1
+		},
+		{
+			"item": "biomancy:regenerative_fluid",
+			"count": 1
+		},
+		{
+			"item": "biomancy:bile",
+			"count": 2
+		}
+	],
+	"nutrientsCost": 1,
+	"result": {
+		"item": "refinedstorage:processor_binding",
+		"count": 8
+	}
+}

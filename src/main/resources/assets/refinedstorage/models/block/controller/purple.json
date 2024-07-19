@@ -1,0 +1,6 @@
+{
+  "parent": "refinedstorage:block/controller/off",
+  "textures": {
+    "lights": "refinedstorage:block/lights/purple"
+  }
+}

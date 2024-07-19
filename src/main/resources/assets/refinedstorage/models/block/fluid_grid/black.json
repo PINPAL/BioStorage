@@ -1,0 +1,6 @@
+{
+  "parent": "refinedstorage:block/fluid_grid/disconnected",
+  "textures": {
+    "lights": "refinedstorage:block/lights/black"
+  }
+}

@@ -1,0 +1,25 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "biomancy"
+		}
+	],
+	"type": "biomancy:bio_forging",
+	"bio_forge_tab": "biomancy:machines",
+	"ingredients": [
+		{
+			"tag": "forge:glass",
+			"count": 2
+		},
+		{
+			"item": "refinedstorage:quartz_enriched_iron",
+			"count": 1
+		}
+	],
+	"nutrientsCost": 5,
+	"result": {
+		"item": "refinedstorage:cable",
+		"count": 8
+	}
+}

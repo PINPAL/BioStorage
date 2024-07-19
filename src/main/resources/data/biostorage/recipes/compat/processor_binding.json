@@ -1,0 +1,25 @@
+{
+	"conditions": [
+		{
+			"type": "forge:not",
+			"value": {
+				"type": "forge:mod_loaded",
+				"modid": "biomancy"
+			}
+		}
+	],
+	"type": "minecraft:crafting_shaped",
+	"pattern": [" S ", "SBS", " S "],
+	"key": {
+		"S": {
+			"tag": "forge:silicon"
+		},
+		"B": {
+			"tag": "biostorage:bindings"
+		}
+	},
+	"result": {
+		"item": "refinedstorage:processor_binding",
+		"count": 12
+	}
+}

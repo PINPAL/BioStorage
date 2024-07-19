@@ -1,0 +1,25 @@
+{
+	"conditions": [
+		{
+			"type": "forge:not",
+			"value": {
+				"type": "forge:mod_loaded",
+				"modid": "biomancy"
+			}
+		}
+	],
+	"type": "minecraft:crafting_shaped",
+	"pattern": ["   ", "GSG", "   "],
+	"key": {
+		"G": {
+			"tag": "forge:glass"
+		},
+		"S": {
+			"item": "refinedstorage:quartz_enriched_iron"
+		}
+	},
+	"result": {
+		"item": "refinedstorage:cable",
+		"count": 8
+	}
+}

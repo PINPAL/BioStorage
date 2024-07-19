@@ -1,0 +1,28 @@
+{
+	"conditions": [
+		{
+			"type": "forge:not",
+			"value": {
+				"type": "forge:mod_loaded",
+				"modid": "biomancy"
+			}
+		}
+	],
+	"type": "minecraft:crafting_shaped",
+	"pattern": [" C ", "HIH", " C "],
+	"key": {
+		"C": {
+			"item": "refinedstorage:cable"
+		},
+		"I": {
+			"item": "refinedstorage:improved_processor"
+		},
+		"H": {
+			"tag": "forge:chests"
+		}
+	},
+	"result": {
+		"item": "refinedstorage:external_storage",
+		"count": 2
+	}
+}

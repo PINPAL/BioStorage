@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "biomancy"
+		}
+	],
+	"type": "biomancy:bio_forging",
+	"bio_forge_tab": "biomancy:machines",
+	"ingredients": [
+		{
+			"tag": "forge:chests",
+			"count": 1
+		},
+		{
+			"item": "refinedstorage:cable",
+			"count": 1
+		},
+		{
+			"item": "refinedstorage:improved_processor",
+			"count": 1
+		}
+	],
+	"nutrientsCost": 5,
+	"result": {
+		"item": "refinedstorage:external_storage",
+		"count": 1
+	}
+}

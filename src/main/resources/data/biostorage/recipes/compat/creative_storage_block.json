@@ -1,0 +1,34 @@
+{
+	"conditions": [
+		{
+			"type": "forge:not",
+			"value": {
+				"type": "forge:mod_loaded",
+				"modid": "biomancy"
+			}
+		}
+	],
+	"type": "minecraft:crafting_shaped",
+	"pattern": ["SDS", "GNG", "DTD"],
+	"key": {
+		"D": {
+			"tag": "forge:storage_blocks/diamond"
+		},
+		"N": {
+			"item": "minecraft:nether_star"
+		},
+		"S": {
+			"item": "minecraft:wither_skeleton_skull"
+		},
+		"T": {
+			"item": "minecraft:echo_shard"
+		},
+		"G": {
+			"item": "refinedstorage:quartz_enriched_iron"
+		}
+	},
+	"result": {
+		"item": "refinedstorage:creative_storage_block",
+		"count": 1
+	}
+}

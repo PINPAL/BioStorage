@@ -1,0 +1,31 @@
+{
+	"conditions": [
+		{
+			"type": "forge:not",
+			"value": {
+				"type": "forge:mod_loaded",
+				"modid": "biomancy"
+			}
+		}
+	],
+	"type": "minecraft:crafting_shaped",
+	"pattern": ["IGI", "SPS", "IGI"],
+	"key": {
+		"S": {
+			"tag": "forge:silicon"
+		},
+		"P": {
+			"item": "refinedstorage:basic_processor"
+		},
+		"I": {
+			"item": "refinedstorage:quartz_enriched_iron"
+		},
+		"G": {
+			"tag": "forge:dusts/glowstone"
+		}
+	},
+	"result": {
+		"item": "refinedstorage:upgrade",
+		"count": 4
+	}
+}

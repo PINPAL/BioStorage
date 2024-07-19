@@ -1,0 +1,33 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "biomancy"
+		}
+	],
+	"type": "biomancy:bio_forging",
+	"bio_forge_tab": "biomancy:machines",
+	"ingredients": [
+		{
+			"item": "refinedstorage:cable",
+			"count": 3
+		},
+		{
+			"item": "refinedstorage:exporter",
+			"count": 1
+		},
+		{
+			"item": "refinedstorage:importer",
+			"count": 1
+		},
+		{
+			"item": "minecraft:bucket",
+			"count": 1
+		}
+	],
+	"nutrientsCost": 5,
+	"result": {
+		"item": "refinedstorage:fluid_interface",
+		"count": 1
+	}
+}

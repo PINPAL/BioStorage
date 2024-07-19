@@ -1,0 +1,28 @@
+{
+	"conditions": [
+		{
+			"type": "forge:not",
+			"value": {
+				"type": "forge:mod_loaded",
+				"modid": "biomancy"
+			}
+		}
+	],
+	"type": "minecraft:crafting_shaped",
+	"pattern": ["SSS", "PDP", "SSS"],
+	"key": {
+		"S": {
+			"tag": "forge:silicon"
+		},
+		"P": {
+			"item": "refinedstorage:processor_binding"
+		},
+		"D": {
+			"tag": "forge:gems/diamond"
+		}
+	},
+	"result": {
+		"item": "refinedstorage:advanced_processor",
+		"count": 1
+	}
+}

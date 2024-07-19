@@ -1,0 +1,28 @@
+{
+	"conditions": [
+		{
+			"type": "forge:not",
+			"value": {
+				"type": "forge:mod_loaded",
+				"modid": "biomancy"
+			}
+		}
+	],
+	"type": "minecraft:crafting_shaped",
+	"pattern": ["IIG", "IPG", "IIG"],
+	"key": {
+		"P": {
+			"item": "refinedstorage:improved_processor"
+		},
+		"I": {
+			"item": "refinedstorage:quartz_enriched_iron"
+		},
+		"G": {
+			"tag": "forge:glass"
+		}
+	},
+	"result": {
+		"item": "refinedstorage:grid",
+		"count": 1
+	}
+}

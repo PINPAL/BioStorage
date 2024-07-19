@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "refinedstorage:fluid_interface"
+		}
+	],
+	"result": {
+		"item": "refinedstorage:interface"
+	}
+}

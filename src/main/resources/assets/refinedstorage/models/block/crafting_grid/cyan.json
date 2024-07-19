@@ -1,0 +1,6 @@
+{
+  "parent": "refinedstorage:block/crafting_grid/disconnected",
+  "textures": {
+    "lights": "refinedstorage:block/lights/cyan"
+  }
+}
