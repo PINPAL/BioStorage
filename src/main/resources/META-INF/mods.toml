@@ -55,12 +55,12 @@ ordering="NONE"
 side="BOTH"
 
 # Mod Dependencies
-[[dependencies.${mod_id}]]
-modId="refinedstorage"
-mandatory=true
-versionRange="[1.11.7,)"
-ordering="BEFORE"
-side="BOTH"
+#[[dependencies.${mod_id}]]
+#modId="refinedstorage"
+#mandatory=true
+#versionRange="[1.11.7,)"
+#ordering="BEFORE"
+#side="BOTH"
 [[dependencies.${mod_id}]]
 modId="biomancy"
 mandatory=false

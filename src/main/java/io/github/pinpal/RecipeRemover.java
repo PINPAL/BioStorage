@@ -53,15 +53,38 @@ public class RecipeRemover {
 		removeRecipesFromNamespace(recipeManager, NAMESPACE_TO_REMOVE);
 	}
 
-	public static void removeRecipesFromNamespace(RecipeManager recipeManager, String namespace) {
-		try {
-			// Use reflection to access the private 'recipes' field
-			// "f_44007_" is the field name for the 'recipes' field in RecipeManager
-			// Obtained for debug code above due to private access
-			// Can vary depending on the mappings and obfuscation
-			// TODO: All of this is very jank and should be refactored
-			Field recipesField = RecipeManager.class.getDeclaredField("f_44007_");
+	public static Field getRecipesField() {
+		// Use reflection to access the private 'recipes' field
+		// "f_44007_" is the field name for the 'recipes' field in RecipeManager with standard mappings
+		// Obtained for debug code above due to private access
+		// Can vary depending on the mappings and obfuscation
+		String[] possibleFieldNames = {"recipes", "f_44007_"};
+		Field recipesField = null;
 
+		for (String fieldName : possibleFieldNames) {
+			try {
+				recipesField = RecipeManager.class.getDeclaredField(fieldName);
+				recipesField.setAccessible(true);
+				return recipesField; // Return immediately if the field is found
+			} catch (NoSuchFieldException e) {
+				LOGGER.error("[BioStorage LOG] Failed to find '{}' field in RecipeManager", fieldName, e);
+			}
+		}
+
+		LOGGER.error("[BioStorage LOG] Could not find the 'recipes' field in RecipeManager using known field names.");
+		return null;
+	}
+
+	public static void removeRecipesFromNamespace(RecipeManager recipeManager, String namespace) {
+
+		Field recipesField = getRecipesField();
+		if (recipesField == null) {
+			LOGGER.error("[BioStorage LOG] Cannot proceed without the 'recipes' field in RecipeManager.");
+			return;
+		}
+
+		// Modify the 'recipes' field to remove recipes from the specified namespace
+		try {
 			recipesField.setAccessible(true);
 
 			// Get the value of the 'recipes' field
@@ -86,8 +109,8 @@ public class RecipeRemover {
 			// Set the modified recipes back to the RecipeManager using reflection
 			recipesField.set(recipeManager, modifiableRecipes);
 
-		} catch (NoSuchFieldException | IllegalAccessException e) {
-			LOGGER.error("Failed to remove recipes", e);
+		} catch (IllegalAccessException e) {
+			LOGGER.error("[BioStorage Log] COMPLETE FAIL! Failed to remove recipes", e);
 		}
 	}
 }
