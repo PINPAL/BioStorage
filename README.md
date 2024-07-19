@@ -1,4 +1,13 @@
+# BioStorage
+## A simple mod to adjust the models, textures and recipes of Refined Storage.
 
+# Depdencies:
+- Minecraft = 1.19.2
+- RefinedStorage >= 1.11.7
+- (Optional) Biomancy >= 2.2.0.0
+- (Optional) JEI >= 11.5.2.1003 
+
+# Forge Information
 Source installation information for modders
 -------------------------------------------
 This code follows the Minecraft Forge installation methodology. It will apply
